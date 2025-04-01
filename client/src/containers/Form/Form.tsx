@@ -42,6 +42,7 @@ export const Form = () => {
 			return;
 		}
 		updateUser(formData);
+		NotificationService.show('Form successfully submitted', 'success');
 	};
 
 	return (
