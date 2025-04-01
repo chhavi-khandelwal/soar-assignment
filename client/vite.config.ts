@@ -4,6 +4,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
+	base: '/',
 	plugins: [react(), tailwindcss()],
-	base: process.env.VITE_SOAR,
+	server: {
+		proxy: {
+			'/api': process.env.VITE_LOCALHOST || 'http://localhost:5001', // Use Vercel env in prod
+		},
+	},
 });

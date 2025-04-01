@@ -2,15 +2,15 @@
 	"version": 2,
 	"builds": [
 		{
-			"src": "index.js",
+			"src": "server.js",
 			"use": "@vercel/node"
 		}
 	],
 	"routes": [
-		{ "src": "/user", "dest": "/index.js" },
-		{ "src": "/cards", "dest": "/index.js" },
-		{ "src": "/transfer-list", "dest": "/index.js" },
-		{ "src": "/recent-transactions", "dest": "/index.js" },
-		{ "src": "/stats", "dest": "/index.js" }
+		{ "src": "/user", "dest": "/server.js" },
+		{ "src": "/cards", "dest": "/server.js" },
+		{ "src": "/transfer-list", "dest": "/server.js" },
+		{ "src": "/recent-transactions", "dest": "/server.js" },
+		{ "src": "/stats", "dest": "/server.js" }
 	]
 }
