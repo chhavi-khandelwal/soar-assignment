@@ -1,0 +1,32 @@
+[
+	{
+		"id": "234",
+		"name": "Livia Bator",
+		"title": "CEO",
+		"photo": "src/assets/people/person1.png"
+	},
+	{
+		"id": "987",
+		"name": "Randy Press",
+		"title": "Director",
+		"photo": "src/assets/people/person2.png"
+	},
+	{
+		"id": "87",
+		"name": "Andy Ress",
+		"title": "WorkMan",
+		"photo": "src/assets/people/person3.png"
+	},
+	{
+		"id": "387",
+		"name": "Andy Ress2",
+		"title": "WorkMan",
+		"photo": "src/assets/people/person1.png"
+	},
+	{
+		"id": "847",
+		"name": "Andy Ress3",
+		"title": "WorkMan",
+		"photo": "src/assets/people/person2.png"
+	}
+]

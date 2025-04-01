@@ -1,0 +1,32 @@
+[
+	{
+		"id": "123",
+		"cardNumber": "6778 **** **** 4234",
+		"cardHolder": "Joe Doe",
+		"validThr": "11/29",
+		"merchant": "visa",
+		"balance": "$1,234",
+		"currency": "dollars",
+		"type": "gray"
+	},
+	{
+		"id": "234",
+		"cardNumber": "3728 **** **** 1231",
+		"cardHolder": "Aba Wang",
+		"validThr": "12/27",
+		"merchant": "visa",
+		"balance": "£ 2243.40",
+		"currency": "pounds",
+		"type": "white"
+	},
+	{
+		"id": "567",
+		"cardNumber": "3778 **** **** 1234",
+		"cardHolder": "Xing Zhang",
+		"validThr": "1/29",
+		"merchant": "visa",
+		"balance": "€ 1234,78",
+		"currency": "euros",
+		"type": "gray"
+	}
+]

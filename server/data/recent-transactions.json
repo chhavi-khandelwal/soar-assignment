@@ -1,0 +1,42 @@
+[
+	{
+		"id": "123",
+		"name": "Deposit from my card",
+		"type": "credit",
+		"logo": "src/assets/icons/transactions/deposit-from-card.svg",
+		"amount": "$234",
+		"timestamp": 1711819200000
+	},
+	{
+		"id": "451",
+		"name": "Deposit Paypal",
+		"type": "credit",
+		"amount": "$24,001",
+		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"timestamp": 1711819200000
+	},
+	{
+		"id": "dcf",
+		"name": "Jemi Willson",
+		"type": "debit",
+		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"amount": "$340",
+		"timestamp": 1611792000000
+	},
+	{
+		"id": "dqcf",
+		"name": "Jemi Willson",
+		"type": "debit",
+		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"amount": "$40",
+		"timestamp": 1611792000000
+	},
+	{
+		"id": "dcfy",
+		"name": "Jemi Willson",
+		"type": "debit",
+		"logo": "src/assets/icons/transactions/deposit-from-card.svg",
+		"amount": "$30",
+		"timestamp": 1611792000000
+	}
+]

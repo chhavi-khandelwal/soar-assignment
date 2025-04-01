@@ -1,0 +1,38 @@
+{
+	"weeklyStats": {
+		"deposit": [
+			{ "day": "Wed", "amount": 100 },
+			{ "day": "Thu", "amount": 500 },
+			{ "day": "Fri", "amount": 500 },
+			{ "day": "Sat", "amount": 100 },
+			{ "day": "Sun", "amount": 500 },
+			{ "day": "Mon", "amount": 100 },
+			{ "day": "Mon", "amount": 500 }
+		],
+		"withdraw": [
+			{ "day": "Wed", "amount": 100 },
+			{ "day": "Thu", "amount": 520 },
+			{ "day": "Fri", "amount": 500 },
+			{ "day": "Sat", "amount": 100 },
+			{ "day": "Sun", "amount": 300 },
+			{ "day": "Mon", "amount": 100 },
+			{ "day": "Mon", "amount": 400 }
+		]
+	},
+	"expenses": [
+		{ "type": "Entertainment", "percent": 30 },
+		{ "type": "Bill Expense", "percent": 30 },
+		{ "type": "Others", "percent": 15 },
+		{ "type": "Investment", "percent": 25 }
+	],
+	"balanceHistory": [
+		{ "month": "Jul", "balance": 800 },
+		{ "month": "Aug", "balance": 100 },
+		{ "month": "Sep", "balance": 900 },
+		{ "month": "Oct", "balance": 500 },
+		{ "month": "Nov", "balance": 800 },
+		{ "month": "Dec", "balance": 600 },
+		{ "month": "Jan", "balance": 900 },
+		{ "month": "Feb", "balance": 100 }
+	]
+}
