@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import EditPencil from '../../assets/icons/edit-pencil.svg';
-import IconButton from '../../components/IconButton';
-import { useUser } from '../../context/UserSettingsContext';
+import EditPencil from '../assets/icons/edit-pencil.svg';
+import IconButton from './IconButton';
+import { useUser } from '../context/UserSettingsContext';
+import NotificationService from '../services/NotificationService/NotificationService';
 
 export const ImageUpload = ({ alt }: { alt: string }) => {
 	const { user, updateUser } = useUser();
@@ -9,6 +10,14 @@ export const ImageUpload = ({ alt }: { alt: string }) => {
 
 	const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0] || null;
+		const supportedFormats = ['image/jpeg', 'image/png', 'image/webp'];
+
+		if (file && !supportedFormats.includes(file?.type)) {
+			NotificationService.show(
+				'Unsupported file format. Please upload a JPG, PNG, or WebP image.',
+				'error'
+			);
+		}
 		if (file) {
 			const reader = new FileReader();
 			reader.onloadend = () => {
@@ -23,7 +32,7 @@ export const ImageUpload = ({ alt }: { alt: string }) => {
 		<div className='relative w-[90px] h-[90px] rounded-full flex items-center justify-center bg-custom-gray'>
 			<input
 				type='file'
-				accept='image/*'
+				accept='image/jpeg, image/png, image/webp'
 				id='image-upload'
 				onChange={handleImageChange}
 				className='absolute bottom-0 right-0 opacity-0 cursor-pointer z-10 !min-w-[30px] !w-[30px] !h-[30px] rounded-full'
@@ -31,7 +40,11 @@ export const ImageUpload = ({ alt }: { alt: string }) => {
 				tabIndex={-1}
 			/>
 			{preview && (
-				<div className='relative w-full h-full rounded-full flex items-center justify-center object-contain overflow-hidden'>
+				<div
+					className='relative w-full h-full rounded-full flex items-center justify-center object-contain overflow-hidden'
+					role='img'
+					aria-label='User profile picture'
+				>
 					<img
 						src={preview}
 						alt={alt}

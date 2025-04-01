@@ -71,7 +71,7 @@ enum ExpenseType {
 export const fetchUser = async (): Promise<User> => {
 	let user = null;
 	try {
-		const userResponse = await fetch(`${import.meta.env.VITE_LOCALHOST}/user`);
+		const userResponse = await fetch(`${import.meta.env.VITE_API}/api/user`);
 
 		user = await userResponse.json();
 	} catch (e) {
@@ -83,9 +83,7 @@ export const fetchUser = async (): Promise<User> => {
 export const fetchCards = async (): Promise<Card[]> => {
 	let cards = [];
 	try {
-		const cardsResponse = await fetch(
-			`${import.meta.env.VITE_LOCALHOST}/cards`
-		);
+		const cardsResponse = await fetch(`${import.meta.env.VITE_API}/api/cards`);
 
 		cards = await cardsResponse.json();
 	} catch (e) {
@@ -98,7 +96,7 @@ export const fetchRecentTransactions = async (): Promise<Transaction[]> => {
 	let transactions = [];
 	try {
 		const transactionsResponse = await fetch(
-			`${import.meta.env.VITE_LOCALHOST}/recent-transactions`
+			`${import.meta.env.VITE_API}/api/recent-transactions`
 		);
 
 		transactions = await transactionsResponse.json();
@@ -112,7 +110,7 @@ export const fetchTransferList = async (): Promise<TransferPerson[]> => {
 	let transferList = [];
 	try {
 		const transferListResponse = await fetch(
-			`${import.meta.env.VITE_LOCALHOST}/transfer-list`
+			`${import.meta.env.VITE_API}/api/transfer-list`
 		);
 
 		transferList = await transferListResponse.json();
@@ -125,9 +123,7 @@ export const fetchTransferList = async (): Promise<TransferPerson[]> => {
 export const fetchStats = async (): Promise<Stats> => {
 	let stats;
 	try {
-		const statsResponse = await fetch(
-			`${import.meta.env.VITE_LOCALHOST}/stats`
-		);
+		const statsResponse = await fetch(`${import.meta.env.VITE_API}/api/stats`);
 
 		stats = await statsResponse.json();
 	} catch (e) {

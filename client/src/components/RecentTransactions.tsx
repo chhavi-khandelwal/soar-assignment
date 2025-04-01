@@ -18,7 +18,7 @@ export const RecentTransactions = () => {
 								src={logo}
 								width={50}
 								height={50}
-								className='md:w-[55px] md:h-[55px]'
+								className='md:w-[55px] md:h-[55px] overflow-hidden rounded-full h-[50px]'
 								alt={name}
 							/>
 							<div className='flex flex-col'>

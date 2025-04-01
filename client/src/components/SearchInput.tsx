@@ -16,7 +16,7 @@ export const SearchInput = ({ className }: { className?: string }) => {
 			<TextInput
 				placeholder='Search for something'
 				icon={Icon}
-				className={`min-w-[255px] rounded-[40px] !bg-custom-gray border border-custom-gray text-custom-base `}
+				className={`min-w-[255px] !rounded-[40px] !bg-custom-gray border border-custom-gray text-custom-base`}
 				ariaLabel='Search'
 			></TextInput>
 		</div>

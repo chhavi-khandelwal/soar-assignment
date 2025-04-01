@@ -3,30 +3,24 @@
 		"id": "234",
 		"name": "Livia Bator",
 		"title": "CEO",
-		"photo": "src/assets/people/person1.png"
+		"photo": "https://edwardtanguay.vercel.app/share/images/employees/employee_1.jpg"
 	},
 	{
 		"id": "987",
 		"name": "Randy Press",
 		"title": "Director",
-		"photo": "src/assets/people/person2.png"
+		"photo": "https://edwardtanguay.vercel.app/share/images/employees/employee_2.jpg"
 	},
 	{
 		"id": "87",
 		"name": "Andy Ress",
 		"title": "WorkMan",
-		"photo": "src/assets/people/person3.png"
+		"photo": "https://edwardtanguay.vercel.app/share/images/employees/employee_3.jpg"
 	},
 	{
 		"id": "387",
 		"name": "Andy Ress2",
 		"title": "WorkMan",
-		"photo": "src/assets/people/person1.png"
-	},
-	{
-		"id": "847",
-		"name": "Andy Ress3",
-		"title": "WorkMan",
-		"photo": "src/assets/people/person2.png"
+		"photo": "https://edwardtanguay.vercel.app/share/images/employees/employee_4.jpg"
 	}
 ]

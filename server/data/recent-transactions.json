@@ -3,7 +3,7 @@
 		"id": "123",
 		"name": "Deposit from my card",
 		"type": "credit",
-		"logo": "src/assets/icons/transactions/deposit-from-card.svg",
+		"logo": "https://edwardtanguay.vercel.app/share/images/books/epicofgilgamesh.png",
 		"amount": "$234",
 		"timestamp": 1711819200000
 	},
@@ -12,30 +12,30 @@
 		"name": "Deposit Paypal",
 		"type": "credit",
 		"amount": "$24,001",
-		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"logo": "https://edwardtanguay.vercel.app/share/images/techBooks/bashCookbook.jpg",
 		"timestamp": 1711819200000
 	},
 	{
 		"id": "dcf",
 		"name": "Jemi Willson",
 		"type": "debit",
-		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"logo": "https://edwardtanguay.vercel.app/share/images/techBooks/bashCookbook.jpg",
 		"amount": "$340",
 		"timestamp": 1611792000000
 	},
 	{
 		"id": "dqcf",
-		"name": "Jemi Willson",
+		"name": "Willson",
 		"type": "debit",
-		"logo": "src/assets/icons/transactions/deposit-from-paypal.svg",
+		"logo": "https://edwardtanguay.vercel.app/share/images/books/epicofgilgamesh.png",
 		"amount": "$40",
 		"timestamp": 1611792000000
 	},
 	{
 		"id": "dcfy",
-		"name": "Jemi Willson",
+		"name": "Deposit Paypal",
 		"type": "debit",
-		"logo": "src/assets/icons/transactions/deposit-from-card.svg",
+		"logo": "https://edwardtanguay.vercel.app/share/images/techBooks/bashCookbook.jpg",
 		"amount": "$30",
 		"timestamp": 1611792000000
 	}

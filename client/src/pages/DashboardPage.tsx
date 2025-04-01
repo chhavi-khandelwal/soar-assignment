@@ -20,11 +20,13 @@ const DashboardPage = () => {
 		<div className='flex flex-col gap-4 md:p-0 p-6 bg-white md:bg-transparent md:rounded-3xl'>
 			<div className='flex flex-col lg:flex-row gap-4 '>
 				<div className='flex flex-col gap-4 lg:w-2/3'>
-					<CardsSection />
+					<Suspense fallback={<Loader />}>
+						<CardsSection />
+					</Suspense>
 				</div>
 				<div className='flex flex-col gap-4 lg:w-1/3'>
 					<Heading>Recent Transaction</Heading>
-					<div className={`${board} md:px-4 md:max-h-[235px] md:py-2`}>
+					<div className={`${board} md:px-4 max-h-[235px] md:py-2`}>
 						<Suspense fallback={<Loader />}>
 							<RecentTransactions />
 						</Suspense>
@@ -34,7 +36,7 @@ const DashboardPage = () => {
 			<div className='flex flex-col lg:flex-row gap-4'>
 				<div className='flex flex-col gap-4	lg:w-2/3'>
 					<Heading>Weekly Activity</Heading>
-					<div className={`${board} h-[275px]`}>
+					<div className={`${board}`}>
 						<Suspense fallback={<Loader />}>
 							<WeeklyActivity />
 						</Suspense>
@@ -42,7 +44,7 @@ const DashboardPage = () => {
 				</div>
 				<div className='flex flex-col gap-4 lg:w-1/3'>
 					<Heading>Expense Statistics</Heading>
-					<div className={`${board} h-[275px]`}>
+					<div className={`${board}`}>
 						<Suspense fallback={<Loader />}>
 							<ExpenseStats />
 						</Suspense>

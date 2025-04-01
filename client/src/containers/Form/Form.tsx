@@ -6,7 +6,7 @@ import {
 	validatePassword,
 } from './utils';
 
-import { ImageUpload } from './ImageUpload';
+import { ImageUpload } from '../../components/ImageUpload';
 import { useUser } from '../../context/UserSettingsContext';
 import { useEffect, useState } from 'react';
 import { User } from '../../api/api';

@@ -23,12 +23,13 @@ export const SideBar = ({ showMenu }: { showMenu: boolean }) => {
 						: '-translate-x-full '
 			} ${isTablet ? 'top-[90px]' : isMobile ? 'top-[60px]' : 'top-0'}`}
 		>
-			<div className='xl:flex items-center  px-[20px] py-[10px] gap-[30px] mb-[10px] hidden'>
+			<div className='xl:flex items-center  px-[20px] py-[10px] gap-[30px] mb-[30px] hidden'>
 				<img
 					src={Logo}
 					alt='Soar Logo'
 					width={19}
 					height={19}
+					loading='lazy'
 				/>
 				<h1 className='text-[25px] font-extrabold'>Soar Task</h1>
 			</div>

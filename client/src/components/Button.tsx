@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 	ariaLabel,
 	disabled = false,
 }) => {
-	const baseStyles = `transition-all cursor-pointer font-medium rounded-lg  shadow-[4px_4px_18px_-2px_rgba(231,228,232,0.8)] text-[18px] font-medium ${className} md:max-w-[190px] w-full flex items-center justify-center gap-2`;
+	const baseStyles = `transition-all cursor-pointer font-medium rounded-lg  shadow-[4px_4px_18px_-2px_rgba(231,228,232,0.8)] text-[18px] font-medium md:max-w-[190px] w-full flex items-center justify-center gap-2 ${className}`;
 	const variantStyles =
 		variant === 'default'
 			? 'md:h-[50px] bg-custom-base px-6 text-white hover:bg-gray-600 focus:bg-gray-600 active:bg-gray-800 '

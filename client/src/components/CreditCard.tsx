@@ -49,6 +49,7 @@ export const CreditCard = ({ card }: { card: Card }) => {
 					alt='chip'
 					width={35}
 					height={35}
+					loading='lazy'
 				/>
 			</div>
 			<div
@@ -65,6 +66,7 @@ export const CreditCard = ({ card }: { card: Card }) => {
 						height={19}
 						className='md:w-[44px] md:h-[30px]'
 						alt='Card Company Icon'
+						loading='lazy'
 					/>
 				</span>
 			</div>

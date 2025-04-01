@@ -8,7 +8,7 @@ export default defineConfig({
 	plugins: [react(), tailwindcss()],
 	server: {
 		proxy: {
-			'/api': process.env.VITE_LOCALHOST || 'http://localhost:5001', // Use Vercel env in prod
+			'/api': process.env.VITE_API || 'http://localhost:5001',
 		},
 	},
 });

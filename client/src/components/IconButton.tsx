@@ -2,7 +2,6 @@ type IconButtonProps = {
 	icon: string | undefined;
 	onClick?: () => void;
 	className?: string;
-	active?: boolean;
 	ariaLabel: string;
 	width?: number;
 	height?: number;
@@ -13,7 +12,6 @@ const IconButton = ({
 	icon,
 	onClick,
 	className = '',
-	active = false,
 	ariaLabel,
 	width = 25,
 	height = 25,
@@ -22,7 +20,7 @@ const IconButton = ({
 	return (
 		<button
 			onClick={onClick}
-			className={`flex min-w-[50px] cursor-pointer items-center md:justify-center rounded-full bg-custom-gray hover:bg-gray-200 md:w-[50px] md:h-[50px] transition-all	 ${className}`}
+			className={`flex min-w-[50px] cursor-pointer items-center md:justify-center rounded-full bg-custom-gray hover:bg-gray-200 md:w-[50px] md:h-[50px] transition-all ${className}`}
 			aria-label={ariaLabel}
 			role='button'
 			tabIndex={0}
@@ -34,6 +32,7 @@ const IconButton = ({
 				width={width}
 				height={height}
 				className='object-contain'
+				loading='lazy'
 			/>
 		</button>
 	);

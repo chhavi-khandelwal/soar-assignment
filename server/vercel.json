@@ -1,16 +1,5 @@
 {
 	"version": 2,
-	"builds": [
-		{
-			"src": "server.js",
-			"use": "@vercel/node"
-		}
-	],
-	"routes": [
-		{ "src": "/user", "dest": "/server.js" },
-		{ "src": "/cards", "dest": "/server.js" },
-		{ "src": "/transfer-list", "dest": "/server.js" },
-		{ "src": "/recent-transactions", "dest": "/server.js" },
-		{ "src": "/stats", "dest": "/server.js" }
-	]
+	"builds": [{ "src": "./index.js", "use": "@vercel/node" }],
+	"routes": [{ "src": "/api/(.*)", "dest": "/" }]
 }

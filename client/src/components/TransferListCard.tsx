@@ -37,6 +37,7 @@ export const TransferListCard = () => {
 							className='flex flex-col gap-6 items-center justify-between cursor-pointer'
 							onClick={() => updateRecepient(person)}
 							htmlFor='transfer-to-recipient'
+							tabIndex={0}
 						>
 							<img
 								src={photo}
@@ -44,6 +45,7 @@ export const TransferListCard = () => {
 								height={50}
 								className='md:w-[70px] md:h-70px] rounded-full'
 								alt={name}
+								loading='lazy'
 							/>
 							<div className='flex flex-col items-center'>
 								<p className={`${recepientClass} text-custom-base`}>{name}</p>
@@ -54,13 +56,14 @@ export const TransferListCard = () => {
 				})}
 				<button
 					aria-label='View all recipients'
-					className='flex items-center justify-center bg-white p-2 rounded-full shadow-md hover:bg-custom-gray focus:outline-none min-w-[50px] min-h-[50px]'
+					className='flex items-center justify-center bg-white p-2 rounded-full shadow-md hover:bg-custom-gray min-w-[50px] min-h-[50px]'
 				>
 					<img
 						src={ArrowIcon}
 						width={7}
 						height={13}
 						alt='View all recipients'
+						loading='lazy'
 					/>
 				</button>
 			</div>
@@ -93,6 +96,7 @@ export const TransferListCard = () => {
 							height={14}
 							className='md:w-[26px] md:h-[23px]'
 							alt='send button icon'
+							loading='lazy'
 						/>
 					</Button>
 				</form>

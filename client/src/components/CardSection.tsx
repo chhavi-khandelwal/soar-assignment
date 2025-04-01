@@ -25,7 +25,7 @@ export const CardsSection = () => {
 			</div>
 
 			<div
-				className={`flex gap-4 pb-2  transition-all duration-300 ${
+				className={`flex gap-6 pb-2  transition-all duration-300 ${
 					showAll ? '!overflow-x-auto' : 'overflow-x-hidden'
 				}`}
 			>
